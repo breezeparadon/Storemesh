@@ -1,0 +1,154 @@
+@import url(https://fonts.googleapis.com/css2?family=Kanit:wght@400&display=swap);
+
+* {
+  font-family: "Kanit", sans-serif;
+}
+
+.custom-toggler.navbar-toggler {
+    border: none;
+    border-color: none;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0, 0, 0)' stroke-width='5' stroke-linecap='round' stroke-miterlimit='10=' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.line-1 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.line-2 {
+    font-size: 16px;
+}
+
+.nav-link {
+    color: black;
+}
+
+.right {
+    align-items: center;
+}
+
+.rightsearch {
+    color: #18498E;
+    position: absolute;
+    top: 40px;
+    padding-left: 10px;
+}
+
+.form-control {
+    padding-left: 30px;
+}
+
+.filter {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    height: 400px;
+}
+
+.data-list .data-item {
+    background-color: #e9ecef;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    height: 50px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: end;
+    text-align: center;
+    gap: 10px;
+}
+
+.page-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #ffffff;
+    border-color: #000000;
+    color: #000000;
+}
+
+.page-link.next-page {
+    color: black;
+}
+
+.page-link.previous-page {
+    color: black;
+}
+
+.page-link {
+    width: 40px;
+}
+
+.searchbar-show {
+    position: absolute;
+    height: 50px;
+    top: 15px;
+    background-color: rgb(8, 33, 62);
+    padding: 10px;
+    display: none;
+    z-index: 999;
+}
+
+@media (max-width: 768px) {
+    .filter {
+        display: none;
+    }
+    .icon-grid {
+        display: none;
+    }
+    .icon-user {
+        display: none;
+    }
+    .box-button {
+        flex-direction: column;
+    }
+
+    .form-control {
+        display: none;
+    }
+    .rightsearch {
+        display: none;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        margin: 0;
+    }
+
+    .logo img {
+        width: 48px;
+    }
+
+    .line-1 {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    
+    .line-2 {
+        font-size: 12px;
+    }
+}
