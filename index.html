@@ -63,9 +63,9 @@
                     <div class="select mt-4">
                         <select class="form-select" aria-label="Default select example">
                             <option selected></option>
-                            <option value="1">Filter1</option>
-                            <option value="2">Filter2</option>
-                            <option value="3">Filter3</option>
+                            <option value="Electronics">Filter1</option>
+                            <option value="Food">Filter2</option>
+                            <option value="Quotes">Filter3</option>
                         </select>
                     </div>
                 </div>
@@ -77,20 +77,21 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Sort by
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">data1</a></li>
-                          <li><a class="dropdown-item" href="#">data2</a></li>
-                          <li><a class="dropdown-item" href="#">data3</a></li>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="sortOptions">
+                            <li><a class="dropdown-item" href="#" id="sortByAZ">ตัวอักษร A - Z</a></li>
+                            <li><a class="dropdown-item" href="#" id="sortByZA">ตัวอักษร Z - A</a></li>
+                            <li><a class="dropdown-item" href="#" id="sortByNumberDesc">จำนวนตัวเลขจากมากไปน้อย</a></li>
+                            <li><a class="dropdown-item" href="#" id="sortByNumberAsc">จำนวนตัวเลขจากน้อยไปมาก</a></li>
                         </ul>
-                      </div>
+                    </div>                    
                 </div>
                 <div class="data-list mt-2">
-                    <div class="data-item"></div>
-                    <div class="data-item"></div>
-                    <div class="data-item"></div>
-                    <div class="data-item"></div>
-                    <div class="data-item"></div>
-                    <div class="data-item"></div>
+                    <div class="data-item" id="data1"></div>
+                    <div class="data-item" id="data2"></div>
+                    <div class="data-item" id="data3"></div>
+                    <div class="data-item" id="data4"></div>
+                    <div class="data-item" id="data5"></div>
+                    <div class="data-item" id="data6"></div>
                 </div>
                 <ul class="pagination mt-3">
                     <li class="page-item">
@@ -106,6 +107,8 @@
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js" type="module"></script>
+    <script src="js/data.js" type="module"></script>
+
 </body>
 </html>
