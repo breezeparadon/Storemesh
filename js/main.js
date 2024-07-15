@@ -30,7 +30,6 @@ function resetDataList() {
     });
 }
 
-/* Sort Functions */
 function sortDataAZ() {
     let sortedData = Object.keys(data).sort((a, b) => {
         if (typeof data[a].content === 'string' && typeof data[b].content === 'string') {
@@ -62,7 +61,6 @@ function sortDataNumberAsc() {
     updateDataList(sortedData);
 }
 
-/* Event Listeners for Sort */
 document.getElementById('sortByAZ').addEventListener('click', sortDataAZ);
 document.getElementById('sortByZA').addEventListener('click', sortDataZA);
 document.getElementById('sortByNumberDesc').addEventListener('click', sortDataNumberDesc);
@@ -75,7 +73,6 @@ document.getElementById('data4').textContent = data.data4.content;
 document.getElementById('data5').textContent = data.data5.content;
 document.getElementById('data6').textContent = data.data6.content;
 
-/* Event Listener for Filter */
 document.querySelector('.form-select').addEventListener('change', function(event) {
     let selectedCategory = event.target.value;
     if (selectedCategory) {
@@ -85,7 +82,6 @@ document.querySelector('.form-select').addEventListener('change', function(event
     }
 });
 
-/* Initial Display of Data */
 resetDataList();
 
 function Opensearch() {
