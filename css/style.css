@@ -30,6 +30,7 @@
 .line-1 {
     font-weight: bold;
     font-size: 24px;
+    color: rgb(0,30,126);
 }
 
 .line-2 {
@@ -37,7 +38,12 @@
 }
 
 .nav-link {
-    color: black;
+    color: rgb(0,30,126);
+}
+
+.nav-link:hover{
+    color: rgb(2, 165, 230);
+    transition: all 0.5s ease;
 }
 
 .right {
@@ -45,7 +51,7 @@
 }
 
 .rightsearch {
-    color: #18498E;
+    color: rgb(0,30,126);
     position: absolute;
     top: 40px;
     padding-left: 10px;
@@ -61,6 +67,11 @@
     border-radius: 5px;
     text-align: center;
     height: 400px;
+    color: rgb(0,30,126);
+}
+
+.text-data {
+    color: rgb(0,30,126);
 }
 
 .data-list .data-item {
