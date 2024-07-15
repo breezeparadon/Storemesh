@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400&display=swap" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Storemesh</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand logo" href="#">
+                <img src="img/logo.png" alt="Logo">
+                <div class="text-container">
+                    <span class="line-1">Storemesh</span>
+                    <span class="line-2">Connecting Business</span>
+                </div>
+            </a>
+            <div class="box-button d-flex align-center">
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <button class="navbar-toggler custom-toggler" onclick="Opensearch()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedSearch" aria-controls="navbarSupportedSearch" aria-expanded="false" aria-label="Toggle search">
+                    <span class="fas fa-search search-icon mr-4 white"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">menu 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">menu 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">menu 3</a>
+                    </li>
+                </ul>
+                <form class="right d-flex relative gap-2">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <span class="rightsearch"><i class="fa fa-search"></i></span>
+                    <svg class="icon-grid" width="32px" height="32px" viewBox="0 -2 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>grid 2</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-154.000000, -935.000000)" fill="#000000"> <path d="M170,935 C167.791,935 166,936.791 166,939 C166,941.209 167.791,943 170,943 C172.209,943 174,941.209 174,939 C174,936.791 172.209,935 170,935 L170,935 Z M182,945 C179.791,945 178,946.791 178,949 C178,951.209 179.791,953 182,953 C184.209,953 186,951.209 186,949 C186,946.791 184.209,945 182,945 L182,945 Z M170,955 C167.791,955 166,956.791 166,959 C166,961.209 167.791,963 170,963 C172.209,963 174,961.209 174,959 C174,956.791 172.209,955 170,955 L170,955 Z M182,955 C179.791,955 178,956.791 178,959 C178,961.209 179.791,963 182,963 C184.209,963 186,961.209 186,959 C186,956.791 184.209,955 182,955 L182,955 Z M170,945 C167.791,945 166,946.791 166,949 C166,951.209 167.791,953 170,953 C172.209,953 174,951.209 174,949 C174,946.791 172.209,945 170,945 L170,945 Z M182,943 C184.209,943 186,941.209 186,939 C186,936.791 184.209,935 182,935 C179.791,935 178,936.791 178,939 C178,941.209 179.791,943 182,943 L182,943 Z M158,955 C155.791,955 154,956.791 154,959 C154,961.209 155.791,963 158,963 C160.209,963 162,961.209 162,959 C162,956.791 160.209,955 158,955 L158,955 Z M158,945 C155.791,945 154,946.791 154,949 C154,951.209 155.791,953 158,953 C160.209,953 162,951.209 162,949 C162,946.791 160.209,945 158,945 L158,945 Z M158,935 C155.791,935 154,936.791 154,939 C154,941.209 155.791,943 158,943 C160.209,943 162,941.209 162,939 C162,936.791 160.209,935 158,935 L158,935 Z" id="grid-2" sketch:type="MSShapeGroup"> </path> </g> </g> </g></svg>
+                    <svg class="icon-user" width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.5" d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" fill="#1C274C"></path> <path d="M16.807 19.0112C15.4398 19.9504 13.7841 20.5 12 20.5C10.2159 20.5 8.56023 19.9503 7.193 19.0111C6.58915 18.5963 6.33109 17.8062 6.68219 17.1632C7.41001 15.8302 8.90973 15 12 15C15.0903 15 16.59 15.8303 17.3178 17.1632C17.6689 17.8062 17.4108 18.5964 16.807 19.0112Z" fill="#1C274C"></path> <path d="M12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3432 6 9.00004 7.34315 9.00004 9C9.00004 10.6569 10.3432 12 12 12Z" fill="#1C274C"></path> </g></svg>
+                </form>
+            </div>
+            <form class="searchbar-show" id="navbarSupportedSearch">
+                <input class="form-control1 me-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+        </div>
+        
+    </nav>
+    
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="filter">
+                    <h4>Filter</h4>
+                    <div class="select mt-4">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected></option>
+                            <option value="1">Filter1</option>
+                            <option value="2">Filter2</option>
+                            <option value="3">Filter3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 col-12">
+                <div class="d-flex justify-content-between">
+                    <span>Data</span>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sort by
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">data1</a></li>
+                          <li><a class="dropdown-item" href="#">data2</a></li>
+                          <li><a class="dropdown-item" href="#">data3</a></li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="data-list mt-2">
+                    <div class="data-item"></div>
+                    <div class="data-item"></div>
+                    <div class="data-item"></div>
+                    <div class="data-item"></div>
+                    <div class="data-item"></div>
+                    <div class="data-item"></div>
+                </div>
+                <ul class="pagination mt-3">
+                    <li class="page-item">
+                      <a class="page-link previous-page" href="#" tabindex="-1" aria-disabled="true">&lt;</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item">
+                      <a class="page-link next-page" href="#">&gt;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
