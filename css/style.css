@@ -22,6 +22,11 @@
     margin-right: 10px;
 }
 
+.navbar-brand:hover {
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+
 .text-container {
     display: flex;
     flex-direction: column;
@@ -38,11 +43,11 @@
 }
 
 .nav-link {
-    color: rgb(0,30,126);
+    color: black;
 }
 
 .nav-link:hover{
-    color: rgb(2, 165, 230);
+    color: rgb(0,30,126);
     transition: all 0.5s ease;
 }
 
