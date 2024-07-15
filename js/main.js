@@ -1,7 +1,5 @@
 import data from './data.js';
 
-console.log(data);
-
 function updateDataList(sortedData) {
     sortedData.forEach((key, index) => {
         document.getElementById(`data${index + 1}`).textContent = data[key].content;
@@ -90,13 +88,3 @@ document.querySelector('.form-select').addEventListener('change', function(event
 
 
 resetDataList();
-
-function Opensearch() {
-    var searchForm = document.querySelector('.searchbar-show');
-
-    if (searchForm.style.display === 'block') {
-        searchForm.style.display = 'none';
-    } else {
-        searchForm.style.display = 'block';
-    }
-}

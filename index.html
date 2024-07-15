@@ -27,7 +27,7 @@
                 </button>
                 <button class="navbar-toggler custom-toggler" onclick="Opensearch()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedSearch" aria-controls="navbarSupportedSearch" aria-expanded="false" aria-label="Toggle search">
                     <span class="fas fa-search search-icon mr-4 white"></span>
-                </button>
+                </button>                
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -105,7 +105,19 @@
             </div>
         </div>
     </div>
-    
+    <script>
+        function Opensearch() {
+            var searchForm = document.querySelector('.searchbar-show');
+
+            if (searchForm.style.display === 'block') {
+
+                searchForm.style.display = 'none';
+            } else {
+                
+                searchForm.style.display = 'block';
+            }
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js" type="module"></script>
     <script src="js/data.js" type="module"></script>
