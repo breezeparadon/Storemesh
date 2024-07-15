@@ -82,6 +82,13 @@ document.querySelector('.form-select').addEventListener('change', function(event
     }
 });
 
+document.querySelector('.form-select').addEventListener('change', function(event) {
+    if (event.target.value === 'refresh') {
+        window.location.reload();
+    }
+});
+
+
 resetDataList();
 
 function Opensearch() {
